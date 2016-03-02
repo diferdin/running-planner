@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Planner View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="PlannerViewController" customModule="Running_Planner" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="251" text="Enter your" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDL-Pu-3nL">
+                                <rect key="frame" x="11" y="77" width="95" height="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="251" text="Enter your" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTp-kh-vIJ">
+                                <rect key="frame" x="11" y="152" width="95" height="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="251" text="Enter your" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a83-bu-pWV">
+                                <rect key="frame" x="12" y="298" width="94" height="33"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial Mileage: 1 Km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ird-ki-zDQ">
+                                <rect key="frame" x="114" y="77" width="191" height="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Increase: 10%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5Z-Mg-LKa">
+                                <rect key="frame" x="114" y="147" width="204" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="adR-Ex-C98"/>
+                                    <constraint firstAttribute="height" constant="33" id="m9X-2r-0eS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kgW-Ro-fn5">
+                                <rect key="frame" x="11" y="334" width="568" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                </segments>
+                                <color key="tintColor" red="0.11415489763021469" green="0.52220779657363892" blue="0.088653974235057831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="weeklyRinsSegmentedControlValueCHanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="0yz-lx-wfU"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Runs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLW-DN-I6c">
+                                <rect key="frame" x="114" y="303" width="167" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="EJK-jX-Ac4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="yf3-i7-U8q">
+                                <rect key="frame" x="9" y="100" width="577" height="31"/>
+                                <connections>
+                                    <action selector="initialMileageSliderValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="gRD-bC-Dp9"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="0tq-Z2-NvJ">
+                                <rect key="frame" x="9" y="175" width="572" height="31"/>
+                                <connections>
+                                    <action selector="weeklyIncreaseSliderValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="PGx-Qw-deQ"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="AFT-S0-k1b">
+                                <rect key="frame" x="9" y="250" width="572" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ThT-7I-thG"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="targetMileageSliderValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="JRM-q7-tL3"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUU-fC-2Rv">
+                                <rect key="frame" x="11" y="117" width="10" height="21"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7B-1V-QHf">
+                                <rect key="frame" x="568" y="117" width="16" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="okx-iD-g4H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pT-Sd-kTj">
+                                <rect key="frame" x="11" y="193" width="10" height="21"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQa-Oe-Ghe">
+                                <rect key="frame" x="568" y="193" width="16" height="21"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6h-tO-wR5">
+                                <rect key="frame" x="11" y="269" width="64" height="21"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naU-u1-cQe">
+                                <rect key="frame" x="568" y="269" width="16" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="D2b-5m-Eg7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="251" text="Enter your" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoa-K9-uLQ">
+                                <rect key="frame" x="11" y="227" width="95" height="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Mileage: 1 Km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3u-dm-MtH">
+                                <rect key="frame" x="114" y="227" width="196" height="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPl-8M-oxH">
+                                <rect key="frame" x="255" y="392" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JX7-cE-1Eh"/>
+                                    <constraint firstAttribute="width" constant="90" id="Tm0-k8-M0w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <segue destination="0iL-29-Taw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="kUc-J2-dkt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y7B-1V-QHf" firstAttribute="leading" secondItem="yf3-i7-U8q" secondAttribute="trailing" constant="-16" id="04w-zk-9g1"/>
+                            <constraint firstItem="5pT-Sd-kTj" firstAttribute="leading" secondItem="0tq-Z2-NvJ" secondAttribute="leading" id="1wk-RC-1ME"/>
+                            <constraint firstItem="0tq-Z2-NvJ" firstAttribute="leading" secondItem="5pT-Sd-kTj" secondAttribute="trailing" constant="-10" id="28U-kL-J2w"/>
+                            <constraint firstItem="kgW-Ro-fn5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-9" id="2fz-fE-aGj"/>
+                            <constraint firstItem="o5Z-Mg-LKa" firstAttribute="leading" secondItem="XTp-kh-vIJ" secondAttribute="trailing" constant="8" symbolic="YES" id="2lO-xw-xMg"/>
+                            <constraint firstItem="Y7B-1V-QHf" firstAttribute="firstBaseline" secondItem="JUU-fC-2Rv" secondAttribute="firstBaseline" id="38k-ct-BFo"/>
+                            <constraint firstItem="5pT-Sd-kTj" firstAttribute="leading" secondItem="XTp-kh-vIJ" secondAttribute="leading" id="4NN-M4-jDo"/>
+                            <constraint firstItem="bQa-Oe-Ghe" firstAttribute="leading" secondItem="0tq-Z2-NvJ" secondAttribute="trailing" constant="-11" id="4ao-oL-G5b"/>
+                            <constraint firstItem="Y7B-1V-QHf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="97" id="5E2-Al-j0B"/>
+                            <constraint firstItem="o5Z-Mg-LKa" firstAttribute="centerY" secondItem="XTp-kh-vIJ" secondAttribute="centerY" id="6VS-ug-EXj"/>
+                            <constraint firstItem="pPl-8M-oxH" firstAttribute="top" secondItem="kgW-Ro-fn5" secondAttribute="bottom" constant="30" id="99S-Q7-Npd"/>
+                            <constraint firstItem="eLW-DN-I6c" firstAttribute="leading" secondItem="Ird-ki-zDQ" secondAttribute="leading" id="9UR-6t-g0n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0tq-Z2-NvJ" secondAttribute="trailing" constant="1" id="BnP-3f-810"/>
+                            <constraint firstItem="X3u-dm-MtH" firstAttribute="leading" secondItem="Hoa-K9-uLQ" secondAttribute="trailing" constant="8" id="C6o-Xh-AR8"/>
+                            <constraint firstItem="5pT-Sd-kTj" firstAttribute="leading" secondItem="JUU-fC-2Rv" secondAttribute="leading" id="CRn-Z3-fCR"/>
+                            <constraint firstItem="JUU-fC-2Rv" firstAttribute="top" secondItem="HDL-Pu-3nL" secondAttribute="bottom" constant="16" id="CZk-S4-fph"/>
+                            <constraint firstItem="Hoa-K9-uLQ" firstAttribute="top" secondItem="5pT-Sd-kTj" secondAttribute="bottom" constant="13" id="DA0-ZB-hWw"/>
+                            <constraint firstItem="kgW-Ro-fn5" firstAttribute="top" secondItem="a83-bu-pWV" secondAttribute="bottom" constant="3" id="E3e-o2-bA0"/>
+                            <constraint firstItem="yf3-i7-U8q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-9" id="EL9-Q1-kIJ"/>
+                            <constraint firstItem="5pT-Sd-kTj" firstAttribute="leading" secondItem="HDL-Pu-3nL" secondAttribute="leading" id="JYF-3b-Msf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kgW-Ro-fn5" secondAttribute="trailing" constant="1" id="JvY-yA-1Jf"/>
+                            <constraint firstItem="pPl-8M-oxH" firstAttribute="centerX" secondItem="kgW-Ro-fn5" secondAttribute="centerX" constant="5" id="KfL-AG-QW4"/>
+                            <constraint firstItem="yf3-i7-U8q" firstAttribute="top" secondItem="HDL-Pu-3nL" secondAttribute="bottom" constant="-1" id="LkQ-Qx-iI2"/>
+                            <constraint firstItem="eLW-DN-I6c" firstAttribute="leading" secondItem="a83-bu-pWV" secondAttribute="trailing" constant="8" id="Oyu-7n-ffK"/>
+                            <constraint firstItem="AFT-S0-k1b" firstAttribute="top" secondItem="X3u-dm-MtH" secondAttribute="bottom" constant="-1" id="P3q-ST-ntp"/>
+                            <constraint firstItem="0tq-Z2-NvJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-9" id="QEi-iZ-OTQ"/>
+                            <constraint firstItem="eLW-DN-I6c" firstAttribute="leading" secondItem="X3u-dm-MtH" secondAttribute="leading" id="QZI-SQ-wJh"/>
+                            <constraint firstItem="5pT-Sd-kTj" firstAttribute="top" secondItem="XTp-kh-vIJ" secondAttribute="bottom" constant="17" id="Quo-40-cMT"/>
+                            <constraint firstItem="Y7B-1V-QHf" firstAttribute="baseline" secondItem="JUU-fC-2Rv" secondAttribute="baseline" id="QxU-IL-oaR"/>
+                            <constraint firstItem="5pT-Sd-kTj" firstAttribute="baseline" secondItem="bQa-Oe-Ghe" secondAttribute="baseline" id="QzL-dL-595"/>
+                            <constraint firstItem="kgW-Ro-fn5" firstAttribute="top" secondItem="eLW-DN-I6c" secondAttribute="bottom" constant="7" id="RkK-Eh-wNy"/>
+                            <constraint firstItem="naU-u1-cQe" firstAttribute="firstBaseline" secondItem="l6h-tO-wR5" secondAttribute="firstBaseline" id="UEI-Vc-sgO"/>
+                            <constraint firstItem="a83-bu-pWV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-8" id="UZG-4X-a0e"/>
+                            <constraint firstItem="naU-u1-cQe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="269" id="Uyf-bY-7fr"/>
+                            <constraint firstItem="AFT-S0-k1b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-9" id="V9O-fP-fS1"/>
+                            <constraint firstItem="o5Z-Mg-LKa" firstAttribute="leading" secondItem="Ird-ki-zDQ" secondAttribute="leading" id="W2S-IV-0aH"/>
+                            <constraint firstItem="yf3-i7-U8q" firstAttribute="top" secondItem="Ird-ki-zDQ" secondAttribute="bottom" constant="-1" id="WUA-By-6Qa"/>
+                            <constraint firstItem="5pT-Sd-kTj" firstAttribute="leading" secondItem="Hoa-K9-uLQ" secondAttribute="leading" id="Y4f-QJ-jMH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AFT-S0-k1b" secondAttribute="trailing" constant="1" id="YQM-el-obc"/>
+                            <constraint firstItem="naU-u1-cQe" firstAttribute="top" secondItem="bQa-Oe-Ghe" secondAttribute="bottom" constant="55" id="aMv-my-o5Z"/>
+                            <constraint firstItem="yf3-i7-U8q" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="4" id="aZe-VZ-pPZ"/>
+                            <constraint firstItem="AFT-S0-k1b" firstAttribute="leading" secondItem="l6h-tO-wR5" secondAttribute="trailing" constant="-64" id="aqD-qK-nU7"/>
+                            <constraint firstItem="naU-u1-cQe" firstAttribute="baseline" secondItem="l6h-tO-wR5" secondAttribute="baseline" id="c6X-GF-pq4"/>
+                            <constraint firstItem="yf3-i7-U8q" firstAttribute="leading" secondItem="JUU-fC-2Rv" secondAttribute="trailing" constant="-10" id="hn0-KJ-lWV"/>
+                            <constraint firstItem="AFT-S0-k1b" firstAttribute="top" secondItem="Hoa-K9-uLQ" secondAttribute="bottom" constant="-1" id="ivY-Uj-l51"/>
+                            <constraint firstItem="kgW-Ro-fn5" firstAttribute="top" secondItem="naU-u1-cQe" secondAttribute="bottom" constant="44" id="kIt-z2-6lW"/>
+                            <constraint firstItem="5pT-Sd-kTj" firstAttribute="leading" secondItem="l6h-tO-wR5" secondAttribute="leading" id="mkj-QB-I8c"/>
+                            <constraint firstItem="0tq-Z2-NvJ" firstAttribute="top" secondItem="Y7B-1V-QHf" secondAttribute="bottom" constant="37" id="nn8-ps-weg"/>
+                            <constraint firstItem="0tq-Z2-NvJ" firstAttribute="top" secondItem="XTp-kh-vIJ" secondAttribute="bottom" constant="-1" id="p8R-wJ-UAh"/>
+                            <constraint firstItem="5pT-Sd-kTj" firstAttribute="firstBaseline" secondItem="bQa-Oe-Ghe" secondAttribute="firstBaseline" id="uFU-KT-Hos"/>
+                            <constraint firstItem="naU-u1-cQe" firstAttribute="leading" secondItem="AFT-S0-k1b" secondAttribute="trailing" constant="-11" id="xAb-4A-cyG"/>
+                            <constraint firstItem="Ird-ki-zDQ" firstAttribute="leading" secondItem="HDL-Pu-3nL" secondAttribute="trailing" constant="8" id="xe6-Xv-uhm"/>
+                            <constraint firstItem="a83-bu-pWV" firstAttribute="top" secondItem="l6h-tO-wR5" secondAttribute="bottom" constant="8" symbolic="YES" id="yQv-DM-nS0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="initialMileageLabel" destination="Ird-ki-zDQ" id="ib1-wu-g2L"/>
+                        <outlet property="initialMileageSlider" destination="yf3-i7-U8q" id="MBt-fe-9qH"/>
+                        <outlet property="targetMileageLabel" destination="X3u-dm-MtH" id="xso-Ng-Oi1"/>
+                        <outlet property="targetMileageSlider" destination="AFT-S0-k1b" id="Hbi-Z8-QR0"/>
+                        <outlet property="targetMileageStartLimitLabel" destination="l6h-tO-wR5" id="768-Ay-ZYD"/>
+                        <outlet property="weeklyIncreaseLabel" destination="o5Z-Mg-LKa" id="0Sq-wa-Zjd"/>
+                        <outlet property="weeklyIncreaseSlider" destination="0tq-Z2-NvJ" id="9rw-Qx-MPx"/>
+                        <outlet property="weeklyRunsSegmentedControl" destination="kgW-Ro-fn5" id="dpb-x8-Wzj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269" y="394"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="WGO-ra-Xfp">
+            <objects>
+                <tableViewController id="0iL-29-Taw" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RKg-eD-7ud">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oBu-NS-tuG">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oBu-NS-tuG" id="nwv-uL-T3Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0iL-29-Taw" id="6YK-TZ-DFR"/>
+                            <outlet property="delegate" destination="0iL-29-Taw" id="mlf-aw-lCf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xg2-aa-M7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="394"/>
+        </scene>
+    </scenes>
+</document>
