@@ -11,6 +11,8 @@
 		A9347A771C6D493100125884 /* PlannerResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9347A761C6D493100125884 /* PlannerResultsViewController.swift */; };
 		A9347A791C7102FD00125884 /* ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9347A781C7102FD00125884 /* ProgramTableViewCell.swift */; };
 		A9347A7B1C71309800125884 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9347A7A1C71309800125884 /* Program.swift */; };
+		A9347A7D1C8B349B00125884 /* AddToCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9347A7C1C8B349B00125884 /* AddToCalendarViewController.swift */; };
+		A9347A7F1C8B4B0900125884 /* CalendarEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9347A7E1C8B4B0900125884 /* CalendarEventsViewController.swift */; };
 		A93DD3CE1C6D3B9500D8BBF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E186E41C0F95C00073CB82 /* Main.storyboard */; };
 		A9E186E11C0F95C00073CB82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E186E01C0F95C00073CB82 /* AppDelegate.swift */; };
 		A9E186E81C0F95C00073CB82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E186E71C0F95C00073CB82 /* Images.xcassets */; };
@@ -33,6 +35,8 @@
 		A9347A761C6D493100125884 /* PlannerResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlannerResultsViewController.swift; sourceTree = "<group>"; };
 		A9347A781C7102FD00125884 /* ProgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewCell.swift; sourceTree = "<group>"; };
 		A9347A7A1C71309800125884 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		A9347A7C1C8B349B00125884 /* AddToCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToCalendarViewController.swift; sourceTree = "<group>"; };
+		A9347A7E1C8B4B0900125884 /* CalendarEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEventsViewController.swift; sourceTree = "<group>"; };
 		A9E186DB1C0F95C00073CB82 /* Running Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E186DF1C0F95C00073CB82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9E186E01C0F95C00073CB82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,12 +89,14 @@
 			children = (
 				A9347A741C6D3C4000125884 /* PlannerViewController.swift */,
 				A9E186E41C0F95C00073CB82 /* Main.storyboard */,
+				A9347A7E1C8B4B0900125884 /* CalendarEventsViewController.swift */,
 				A9347A7A1C71309800125884 /* Program.swift */,
 				A9E186E71C0F95C00073CB82 /* Images.xcassets */,
 				A9E186E91C0F95C00073CB82 /* LaunchScreen.xib */,
 				A9E186DE1C0F95C00073CB82 /* Supporting Files */,
 				A9347A761C6D493100125884 /* PlannerResultsViewController.swift */,
 				A9347A781C7102FD00125884 /* ProgramTableViewCell.swift */,
+				A9347A7C1C8B349B00125884 /* AddToCalendarViewController.swift */,
 			);
 			path = "Running Planner";
 			sourceTree = "<group>";
@@ -224,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9347A791C7102FD00125884 /* ProgramTableViewCell.swift in Sources */,
+				A9347A7F1C8B4B0900125884 /* CalendarEventsViewController.swift in Sources */,
 				A9347A751C6D3C4000125884 /* PlannerViewController.swift in Sources */,
 				A9347A7B1C71309800125884 /* Program.swift in Sources */,
+				A9347A7D1C8B349B00125884 /* AddToCalendarViewController.swift in Sources */,
 				A9347A771C6D493100125884 /* PlannerResultsViewController.swift in Sources */,
 				A9E186E11C0F95C00073CB82 /* AppDelegate.swift in Sources */,
 			);

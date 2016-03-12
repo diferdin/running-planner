@@ -84,4 +84,11 @@ class PlannerResultsViewController: UITableViewController {
         
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "toCalendarView") {
+            let destinationVC = segue.destinationViewController as! AddToCalendarViewController
+            destinationVC.userData = userData
+        }
+    }
 }
