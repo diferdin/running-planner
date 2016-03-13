@@ -46,8 +46,6 @@ class AddToCalendarViewController: UIViewController {
                 sender.selected = false
                 eventsButton.hidden = true
             }
-        }
-        
-        print("\(selectedRunDays.count)")
+        }        
     }
 }
